@@ -101,13 +101,13 @@ async function gpt(nickName, Role, genre) {
   });
   console.log("--GPT Result:");
   // console.log(completion.choices[0]?.message?.content);
-  let gptResult = completion.choices[0]?.message?.content;
+  // let gptResult = completion.choices[0]?.message?.content;
 
   //change /n to <br> tag
   const formattedCharacterInfo =
     completion.choices[0]?.message?.content.replace(/\n/g, "<br>");
   console.log(formattedCharacterInfo);
-  console.log(gptResult);
+  // console.log(gptResult);
 
   // return gptResult;
   return formattedCharacterInfo; // Return the formatted character info with HTML line breaks
