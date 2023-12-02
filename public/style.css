@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+.container {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  line-height: 30px;
+  /* max-width: 1500px; Adjust as needed */
+}
