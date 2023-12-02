@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Create D&D Character</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>D&D Creation Form:</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <form id="myForm">
+      <label for="nickName">Nick Name:</label>
+      <input type="text" id="nickName" placeholder="Enter your Nick Name">
+      <br>
+      <label for ="Role"> Role: </label>
+      <select id ="Role">
+        <option value="Role">Select your Role</option>
+        <option value="Artificer">Artificer</option>
+        <option value="Barbarian">Barbarian</option>
+        <option value="Fighter">Fighter</option>
+        <option value="Monk">Monk</option>
+        <option value="Paladin">Paladin</option>
+        <option value="Rogue">Rogue</option>
+        <option value="Sorcerer">Sorcerer</option>
+        <option value="wizard">Wizard</option>
+      </select>
+      <br>
+    
+      <label for ="genre"> Genre: </label>
+      <select id ="genre">
+        <option value="genre">Select game genre</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="scienceFiction">Science Fiction</option>
+        <option value="horror">Horror</option>
+        <option value="mystery">Mystery</option>
+      </select>
+      <br>
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <p>
+    <div id="result">
+
+    </div>
+    <br>
+    <div id="charSetting">
+
+    </div>
+    <br>
+    <div id="gpt">
+    </div>
+    </p>
+    <br>
+  </div>
+
+  <script src="client.js" defer></script>
+</body>
+
+</html>
