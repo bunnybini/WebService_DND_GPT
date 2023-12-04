@@ -5,9 +5,14 @@ import { dirname, join } from "path";
 import "dotenv/config";
 import { getSign, getZodiac } from "horoscope";
 import OpenAI from "openai";
+import cors from "cors";
 // https://www.npmjs.com/package/openai
 
 const app = express();
+
+// var cors = require("cors");
+app.use(cors());
+
 app.use(express.json());
 
 const port = process.env.PORT || 3001;
